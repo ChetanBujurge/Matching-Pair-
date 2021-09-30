@@ -1,0 +1,171 @@
+.button {
+    display: inline-block;
+    padding: 15px 25px;
+    font-size: 24px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #999;
+  }
+
+
+  h1 {
+    text-shadow: 0 0 3px #FF0000, 0 0 5px #04045a;
+  }
+  
+  .button:hover {background-color: #3e8e41}
+  
+  .button:active {
+    background-color: #3e8e41;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+  }
+
+  p {
+    font-size: 40px;
+    margin-top:5px;
+}
+
+
+#inst li {
+  text-align: left;
+  text-align: center;
+  padding: 5px;
+}
+
+  
+.inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    -webkit-transition: -webkit-transform 0.8s;
+            transition: -webkit-transform 0.8s;
+         -o-transition: transform 0.8s;
+            transition: transform 0.8s;
+            transition: transform 0.8s, -webkit-transform 0.8s;
+    -webkit-transform-style: preserve-3d;
+            transform-style: preserve-3d;
+    -webkit-transform: rotateY(0deg);
+            transform: rotateY(0deg);
+}
+
+.front {
+    background-color: rgba(255,255,255,0.3);
+}
+
+.back {
+    background-color: rgba(255,255,255,0.5);
+    -webkit-transform: rotateY(180deg);
+            transform: rotateY(180deg);
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-gap: 10px;
+    background-color: #2196F3;
+    padding: 10px;
+  }
+  
+  .grid-container > div {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid black;
+    text-align: center;
+    font-size: 30px;
+  }
+
+
+td {
+    background-color: rgba(168, 90, 90, 0.3);
+    border: 1px solid rgb(97, 49, 7);
+    height:70px;
+    width:70px;
+}
+
+td, .inner, .front, .back {
+    border-radius: 4px;
+}
+
+table {
+    margin-top: 80px;
+}
+
+
+#ol {
+  position: absolute;
+  height:100vh;
+  width:100vw;
+  background-color: rgb(193, 223, 60);
+  color: red;
+  -webkit-backdrop-filter: blur(8px);
+          backdrop-filter: blur(8px);
+  z-index:2;  
+  p.double {border-style: double;}
+}
+
+
+
+
+.inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  -webkit-transition: -webkit-transform 0.8s;
+          transition: -webkit-transform 0.8s;
+       -o-transition: transform 0.8s;
+          transition: transform 0.8s;
+          transition: transform 0.8s, -webkit-transform 0.8s;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  -webkit-transform: rotateY(0deg);
+          transform: rotateY(0deg);
+}
+
+.front {
+  background-color: rgba(255,255,255,0.3);
+}
+
+.back {
+  background-color: rgba(255,255,255,0.5);
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+}
+
+.front, .back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+}
+
+
+#time {
+  position: absolute;
+  right: 20px;
+  font-size: 30px;
+  font-weight: bold;
+  top: 8.5px;
+}
+
+#moves {
+  position: absolute;
+  left: 20px;
+  font-size: 30px;
+  font-weight: bold;
+  top:8.5px;
+}
+
+#logo {
+  font-size: 22px;
+  padding-top: 10px;
+  display: block;
+  text-align: center;
+}

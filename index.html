@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+    <style>
+        h1 {
+    color: rgb(97, 245, 11);
+    text-shadow: 1px 1px 2px black, 0 0 25px rgb(228, 109, 62), 0 0 5px rgb(172, 19, 8);
+  }
+
+
+        body {
+          padding: 25px;
+          background-color: rgb(193, 223, 60);
+          color: black;
+          font-size: 25px;
+        }
+        
+        .dark-mode {
+          background-color: black;
+          color: rgb(193, 223, 60);
+        }
+    </style>
+        
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="color-scheme" content="dark light">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matching Pair Game</title>
+    <link rel="shortcut icon" type="image/jpg" href="Images/fevicon.PNG"/>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"> </script>
+    <script src="script.js"> </script>
+</head>
+<body>
+    <div id="ol"> </div>
+    <div style="height: 8px;"></div>
+    <div id="title">
+        <span id="logo"><h1>Matching Pair Game</h1></span>
+    </div>
+
+    <div id="title" style="height: 40px;">
+        <span id="moves"></span>
+        <span id="time"></span>
+    </div>
+
+    <center>
+        <table cellspacing="0"></table>
+    </center>
+
+    <button class="button" onclick="myFunction()">Toggle dark mode</button>
+    
+    <script>
+        function myFunction() {
+           var element = document.body;
+           element.classList.toggle("dark-mode");
+        }
+    </script>
+</body>
+</html>
